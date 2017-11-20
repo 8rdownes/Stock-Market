@@ -19,12 +19,17 @@ this.quantity=q;
 
 
     //declarea and define sell(q) function below
-    
 
-this.totalValue()=function(){
+
+this.totalValue=function(){
 return(this.value*this.quantity);
 
-this.sell(q)=function(){
+this.sell=function(q){
+  if(q<=this.quantity){
+    this.quality=this.quality-q;
+    return(this.quality*q);
+    //return money made
+  }
 
 
 
